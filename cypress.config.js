@@ -8,7 +8,7 @@ module.exports = defineConfig({
   reporterOptions: {
     reportDir: 'cypress/reports',
     overwrite: false,
-    html: true,
+    html: false,
     json: true,
     reportFilename: '[status]_[datetime]-report',
     timestamp: 'shortDate',
@@ -50,4 +50,6 @@ module.exports = defineConfig({
       on('file:preprocessor', cucumber());
   },
   },
+
+  
 });
